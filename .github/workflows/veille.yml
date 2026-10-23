@@ -1,0 +1,38 @@
+name: Veille RSS
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm install --no-audit --no-fund
+
+      - name: Exécuter la veille
+        run: node worker.mjs
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Sauvegarder les articles déjà vus
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update veille state"
+          file_pattern: data/seen.json
