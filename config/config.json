@@ -1,8 +1,77 @@
 {
-  "keywords": ["accessibilité numérique", "Vue.js", "RGAA","intelligence artificielle"],
-  "feeds": [
-    { "name": "OpenAI News", "url": "https://openai.com/news/rss.xml" },
-    { "name": "Vue.js Blog", "url": "https://blog.vuejs.org/feed.rss" }
+  "keywords": [
+    "accessibilité numérique",
+    "accessibilité web",
+    "RGAA",
+    "WCAG",
+    "a11y",
+    "Vue.js",
+    "Vue 3",
+    "Vuetify",
+    "TypeScript",
+    "JavaScript",
+    "intelligence artificielle",
+    "IA générative",
+    "OpenAI",
+    "cybersécurité",
+    "protection des données"
   ],
-  "notifications": { "telegram": true, "discord": false }
+  "feeds": [
+    {
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml"
+    },
+    {
+      "name": "Vue.js Blog",
+      "url": "https://blog.vuejs.org/feed.rss"
+    },
+    {
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/blog/rss.xml"
+    },
+    {
+      "name": "MDN Documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/feeds/rss/all"
+    },
+    {
+      "name": "W3C Blog",
+      "url": "https://www.w3.org/blog/feed/"
+    },
+    {
+      "name": "WebAIM Accessibilité",
+      "url": "https://webaim.org/blog/feed/"
+    },
+    {
+      "name": "A11Y Project",
+      "url": "https://www.a11yproject.com/feed.xml"
+    },
+    {
+      "name": "Vite Blog",
+      "url": "https://vite.dev/blog/feed.xml"
+    },
+    {
+      "name": "GitHub Blog",
+      "url": "https://github.blog/feed/"
+    },
+    {
+      "name": "Google News Accessibilité",
+      "url": "https://news.google.com/rss/search?q=accessibilite+numerique"
+    },
+    {
+      "name": "Google News Vue.js",
+      "url": "https://news.google.com/rss/search?q=Vue.js+JavaScript"
+    },
+    {
+      "name": "Google News Intelligence Artificielle",
+      "url": "https://news.google.com/rss/search?q=intelligence+artificielle"
+    },
+    {
+      "name": "Google News Cybersécurité",
+      "url": "https://news.google.com/rss/search?q=cybersecurite"
+    }
+  ],
+  "notifications": {
+    "telegram": true,
+    "discord": false
+  }
 }
