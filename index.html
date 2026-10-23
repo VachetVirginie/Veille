@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veille — configuration gratuite</title>
+    <style>
+      :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; background:#0d1321; color:#e8eefc }
+      body { margin:0; min-height:100vh; background:radial-gradient(circle at top right,#19365a 0,#0d1321 45%); }
+      main { max-width:980px; margin:auto; padding:48px 20px; }
+      h1 { font-size:clamp(2rem,5vw,4rem); margin:0 0 12px; letter-spacing:-.05em }
+      .intro { color:#aebbd3; max-width:700px; font-size:1.1rem; line-height:1.6 }
+      .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:16px; margin-top:30px }
+      section { background:#121d30cc; border:1px solid #2c4160; border-radius:18px; padding:22px; box-shadow:0 12px 40px #0003 }
+      h2 { margin-top:0; font-size:1.1rem }
+      label { display:block; margin:14px 0 6px; color:#b8c6df; font-size:.9rem }
+      input, textarea { width:100%; box-sizing:border-box; border:1px solid #3c5476; border-radius:10px; padding:11px; background:#0d1627; color:#fff; font:inherit }
+      textarea { min-height:120px; resize:vertical }
+      button { border:0; border-radius:10px; padding:12px 16px; background:#53d3a5; color:#082016; font-weight:800; cursor:pointer; margin-top:16px }
+      button:focus-visible, input:focus-visible, textarea:focus-visible { outline:3px solid #ffd166; outline-offset:2px }
+      .hint { color:#91a5c5; font-size:.86rem; line-height:1.5 }
+      code { color:#ffd166 }
+      #status { min-height:1.4em; color:#8ff0c5; margin-top:18px }
+      .badge { display:inline-block; border:1px solid #3c5476; border-radius:999px; padding:5px 9px; font-size:.78rem; color:#aebbd3 }
+    </style>
+  </head>
+  <body>
+    <main id="app">
+      <span class="badge">100 % gratuit · open source · sans tracking</span>
+      <h1>Votre veille, sans abonnement.</h1>
+      <p class="intro">Configurez des flux RSS et des mots-clés. Le worker GitHub Actions vérifiera les nouveautés toutes les heures et les transmettra à Telegram ou Discord.</p>
+      <div class="grid">
+        <section>
+          <h2>Sources RSS</h2>
+          <label for="feeds">Une source par ligne : nom | URL</label>
+          <textarea id="feeds" aria-describedby="feeds-help"></textarea>
+          <p id="feeds-help" class="hint">Exemple : <code>Vue.js | https://blog.vuejs.org/feed.rss</code></p>
+        </section>
+        <section>
+          <h2>Filtrage</h2>
+          <label for="keywords">Mots-clés</label>
+          <input id="keywords" placeholder="Vue.js, RGAA, accessibilité" />
+          <p class="hint">Une alerte est envoyée si le titre ou le résumé contient au moins un mot-clé.</p>
+        </section>
+        <section>
+          <h2>Notifications</h2>
+          <label><input id="telegram" type="checkbox" /> Telegram</label>
+          <label><input id="discord" type="checkbox" /> Discord</label>
+          <p class="hint">Les secrets restent dans GitHub Actions, jamais dans cette page.</p>
+        </section>
+      </div>
+      <button id="download" type="button">Télécharger ma configuration</button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </main>
+    <script>
+      const feeds = document.querySelector('#feeds');
+      const keywords = document.querySelector('#keywords');
+      const telegram = document.querySelector('#telegram');
+      const discord = document.querySelector('#discord');
+      feeds.value = 'Vue.js | https://blog.vuejs.org/feed.rss\nOpenAI News | https://openai.com/news/rss.xml';
+      keywords.value = 'Vue.js, RGAA, accessibilité numérique';
+      document.querySelector('#download').addEventListener('click', () => {
+        const parsedFeeds = feeds.value.split('\n').map(line => {
+          const [name, url] = line.split('|').map(value => value.trim());
+          return name && url ? { name, url } : null;
+        }).filter(Boolean);
+        const config = { keywords: keywords.value.split(',').map(v => v.trim()).filter(Boolean), feeds: parsedFeeds, notifications: { telegram: telegram.checked, discord: discord.checked } };
+        const blob = new Blob([JSON.stringify(config, null, 2)], { type: 'application/json' });
+        const link = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: 'config.json' });
+        link.click(); URL.revokeObjectURL(link.href);
+        document.querySelector('#status').textContent = 'Configuration téléchargée. Déposez-la dans le dossier config/ du dépôt.';
+      });
+    </script>
+  </body>
+</html>

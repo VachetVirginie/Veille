@@ -1,0 +1,8 @@
+{
+  "keywords": ["accessibilité numérique", "Vue.js", "RGAA"],
+  "feeds": [
+    { "name": "OpenAI News", "url": "https://openai.com/news/rss.xml" },
+    { "name": "Vue.js Blog", "url": "https://blog.vuejs.org/feed.rss" }
+  ],
+  "notifications": { "telegram": true, "discord": false }
+}
