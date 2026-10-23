@@ -2,7 +2,7 @@ name: Veille RSS
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17 8-21 * * *"
   workflow_dispatch:
 
 permissions:
