@@ -40,7 +40,58 @@
     "données personnelles",
     "RGPD",
     "CNIL",
-    "violation de données"
+    "violation de données",
+    "web performance",
+    "Core Web Vitals",
+    "INP",
+    "WCAG 2.2",
+    "SSR",
+    "hydratation",
+    "hydration",
+    "Web Platform",
+    "WebGPU",
+    "WebAssembly",
+    "architecture logicielle",
+    "software architecture",
+    "systèmes distribués",
+    "distributed systems",
+    "observabilité",
+    "observability",
+    "OpenTelemetry",
+    "eBPF",
+    "Kubernetes",
+    "Docker",
+    "conteneurs",
+    "PostgreSQL",
+    "Linux",
+    "noyau Linux",
+    "logiciel libre",
+    "open source",
+    "homelab",
+    "auto-hébergement",
+    "self-hosting",
+    "Raspberry Pi",
+    "RISC-V",
+    "benchmark",
+    "post-mortem",
+    "postmortem",
+    "retour d’expérience",
+    "CI/CD",
+    "sécurité de la chaîne logicielle",
+    "software supply chain",
+    "SBOM",
+    "inférence locale",
+    "local inference",
+    "llama.cpp",
+    "Ollama",
+    "Orange Business",
+    "Orange Tech Insights",
+    "Orange Cyberdefense",
+    "DNS",
+    "IPv6",
+    "télécommunications",
+    "souveraineté numérique",
+    "réseaux"
   ],
   "feeds": [
     {
@@ -92,6 +143,102 @@
       "url": "https://blog.octo.com/feed/"
     },
     {
+      "name": "LinuxFr — dépêches Linux et logiciels libres",
+      "url": "https://linuxfr.org/news.atom"
+    },
+    {
+      "name": "Journal du Hacker — sélection francophone open source",
+      "url": "https://www.journalduhacker.net/rss"
+    },
+    {
+      "name": "Zwindler — Kubernetes, homelab et infrastructure",
+      "url": "https://blog.zwindler.fr/index.xml"
+    },
+    {
+      "name": "Ippon — retours d’expérience cloud, architecture et data",
+      "url": "https://blog.ippon.fr/rss/"
+    },
+    {
+      "name": "Je suis un dev — culture et pratiques du développement",
+      "url": "https://www.jesuisundev.com/feed/"
+    },
+    {
+      "name": "Korben — outils, bidouille et culture geek",
+      "url": "https://www.korben.info/feed"
+    },
+    {
+      "name": "Le Monde Informatique — infrastructure et cloud",
+      "url": "https://www.lemondeinformatique.fr/flux/infrastructure-cloud.xml"
+    },
+    {
+      "name": "Orange Business — Perspective, data et IA",
+      "url": "https://perspective.orange-business.com/fr/feed/"
+    },
+    {
+      "name": "OVHcloud — infrastructure et cloud",
+      "url": "https://blog.ovhcloud.com/fr/feed.xml"
+    },
+    {
+      "name": "Zenika — architecture et développement",
+      "url": "https://blog.zenika.com/feed/"
+    },
+    {
+      "name": "Programmez! — actualités du développement",
+      "url": "https://www.programmez.com/rss.xml"
+    },
+    {
+      "name": "Developpez.com — actualités des développeurs",
+      "url": "https://www.developpez.com/index/rss"
+    },
+    {
+      "name": "Stéphane Bortzmeyer — DNS, protocoles et réseau",
+      "url": "https://www.bortzmeyer.org/feed.atom"
+    },
+    {
+      "name": "AFNIC — DNS, Internet et noms de domaine",
+      "url": "https://www.afnic.fr/feed/"
+    },
+    {
+      "name": "Framablog — logiciel libre et numérique",
+      "url": "https://framablog.org/feed/"
+    },
+    {
+      "name": "LeMagIT — infrastructure, cloud, stockage et cyber",
+      "url": "https://www.lemagit.fr/rss/ContentSyndication.xml"
+    },
+    {
+      "name": "Les Numériques — produits et tests matériels",
+      "url": "https://www.lesnumeriques.com/rss.xml"
+    },
+    {
+      "name": "Frandroid — Android et mobilité",
+      "url": "https://www.frandroid.com/android/feed"
+    },
+    {
+      "name": "Google Actualités France — Accessibilité numérique et RGAA",
+      "url": "https://news.google.com/rss/search?q=(%22accessibilit%C3%A9%20num%C3%A9rique%22%20OR%20%22accessibilit%C3%A9%20web%22%20OR%20RGAA%20OR%20WCAG)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+    },
+    {
+      "name": "Google Actualités France — Accessibilité numérique — DINUM et Access42",
+      "url": "https://news.google.com/rss/search?q=((site%3Anumerique.gouv.fr%20OR%20site%3Aaccess42.net)%20(accessibilit%C3%A9%20OR%20RGAA))%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+    },
+    {
+      "name": "Google Actualités France — Vue.js, Nuxt, Vuetify et Pinia",
+      "url": "https://news.google.com/rss/search?q=(%22Vue.js%22%20OR%20%22Vue%203%22%20OR%20Vuetify%20OR%20Nuxt%20OR%20Pinia)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+    },
+    {
+      "name": "Google Actualités France — RGPD et données personnelles",
+      "url": "https://news.google.com/rss/search?q=(RGPD%20OR%20CNIL%20OR%20%22protection%20des%20donn%C3%A9es%20personnelles%22)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+    },
+    {
+      "name": "Google Actualités France — sorties et migrations frontend",
+      "url": "https://news.google.com/rss/search?q=%28%22TypeScript%22+OR+Vuetify+OR+%22Vite.js%22%29+%28%22version%22+OR+%22migration%22+OR+%22performance%22%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+    },
+    {
+      "name": "Google Actualités France — Orange Tech Insights et Orange Cyberdefense",
+      "url": "https://news.google.com/rss/search?q=%28site%3Atechinsights.orange.com%2Ffr+OR+site%3Aorangecyberdefense.com%2Ffr%29+%28r%C3%A9seaux+OR+cybers%C3%A9curit%C3%A9+OR+IA+OR+recherche%29+when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+    },
+    {
       "name": "Human Coders News — veille développement, FR et EN",
       "url": "https://news.humancoders.com/items/feed.rss"
     },
@@ -108,32 +255,36 @@
       "url": "https://openai.com/news/rss.xml"
     },
     {
-      "name": "Google Actualités France — Accessibilité numérique et RGAA",
-      "url": "https://news.google.com/rss/search?q=(%22accessibilit%C3%A9%20num%C3%A9rique%22%20OR%20%22accessibilit%C3%A9%20web%22%20OR%20RGAA%20OR%20WCAG)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+      "name": "Chrome for Developers — plateforme web et performances [EN]",
+      "url": "https://developer.chrome.com/blog/feed.xml"
     },
     {
-      "name": "Google Actualités France — Accessibilité numérique — DINUM et Access42",
-      "url": "https://news.google.com/rss/search?q=((site%3Anumerique.gouv.fr%20OR%20site%3Aaccess42.net)%20(accessibilit%C3%A9%20OR%20RGAA))%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+      "name": "WebKit — Safari et standards web [EN]",
+      "url": "https://webkit.org/feed/"
     },
     {
-      "name": "Google Actualités France — Vue.js, Nuxt, Vuetify et Pinia",
-      "url": "https://news.google.com/rss/search?q=(%22Vue.js%22%20OR%20%22Vue%203%22%20OR%20Vuetify%20OR%20Nuxt%20OR%20Pinia)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+      "name": "Cloudflare — réseaux, systèmes distribués et post-mortems [EN]",
+      "url": "https://blog.cloudflare.com/rss/"
     },
     {
-      "name": "Google Actualités France — TypeScript, JavaScript et Vite",
-      "url": "https://news.google.com/rss/search?q=(TypeScript%20OR%20JavaScript%20OR%20%22Vite.js%22)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+      "name": "Brendan Gregg — observabilité et performances Linux [EN]",
+      "url": "https://www.brendangregg.com/blog/rss.xml"
     },
     {
-      "name": "Google Actualités France — OpenAI et IA générative",
-      "url": "https://news.google.com/rss/search?q=(%22IA%20g%C3%A9n%C3%A9rative%22%20OR%20%22intelligence%20artificielle%20g%C3%A9n%C3%A9rative%22%20OR%20OpenAI%20OR%20ChatGPT)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+      "name": "Mozilla Security — sécurité du navigateur et du Web [EN]",
+      "url": "https://blog.mozilla.org/security/feed/"
     },
     {
-      "name": "Google Actualités France — Cybersécurité et ANSSI",
-      "url": "https://news.google.com/rss/search?q=(cybers%C3%A9curit%C3%A9%20OR%20ANSSI%20OR%20%22CERT-FR%22)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+      "name": "Simon Willison — expérimentations et outils LLM [EN]",
+      "url": "https://simonwillison.net/atom/entries/"
     },
     {
-      "name": "Google Actualités France — RGPD et données personnelles",
-      "url": "https://news.google.com/rss/search?q=(RGPD%20OR%20CNIL%20OR%20%22protection%20des%20donn%C3%A9es%20personnelles%22)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
+      "name": "Raspberry Pi — matériel, projets et embarqué [EN]",
+      "url": "https://www.raspberrypi.com/news/feed/"
+    },
+    {
+      "name": "Phoronix — matériel Linux, noyau et benchmarks [EN]",
+      "url": "https://www.phoronix.com/rss.php"
     }
   ],
   "notifications": {
