@@ -5,69 +5,135 @@
     "RGAA",
     "WCAG",
     "a11y",
+    "audit d’accessibilité",
+    "audit d'accessibilité",
+    "lecteur d’écran",
+    "lecteur d'écran",
+    "navigation clavier",
+    "WAI-ARIA",
+    "ARIA",
     "Vue.js",
     "Vue 3",
+    "VueJS",
     "Vuetify",
+    "Nuxt",
+    "Pinia",
+    "Vite",
     "TypeScript",
     "JavaScript",
+    "Web Components",
     "intelligence artificielle",
     "IA générative",
+    "intelligence artificielle générative",
     "OpenAI",
+    "ChatGPT",
+    "modèle de langage",
+    "LLM",
+    "règlement sur l’IA",
+    "AI Act",
     "cybersécurité",
-    "protection des données"
+    "sécurité informatique",
+    "vulnérabilité",
+    "CERT-FR",
+    "ANSSI",
+    "protection des données",
+    "données personnelles",
+    "RGPD",
+    "CNIL",
+    "violation de données"
   ],
   "feeds": [
     {
-      "name": "OpenAI News",
-      "url": "https://openai.com/news/rss.xml"
+      "name": "Alsacréations — actualités, tutoriels et accessibilité",
+      "url": "https://www.alsacreations.com/rss/actualites.xml"
     },
     {
-      "name": "Vue.js Blog",
+      "name": "CNIL — actualités et données personnelles",
+      "url": "https://www.cnil.fr/fr/rss.xml"
+    },
+    {
+      "name": "CERT-FR — bulletins d’actualité",
+      "url": "https://cert.cyber.gouv.fr/actualite/feed/"
+    },
+    {
+      "name": "CERT-FR — alertes",
+      "url": "https://cert.cyber.gouv.fr/alerte/feed/"
+    },
+    {
+      "name": "IT-Connect — actualités",
+      "url": "https://www.it-connect.fr/actualites/feed/"
+    },
+    {
+      "name": "Le Monde Informatique — cybersécurité et conformité",
+      "url": "https://www.lemondeinformatique.fr/flux/cybersecurite-conformite.xml"
+    },
+    {
+      "name": "Le Monde Informatique — applications et développement",
+      "url": "https://www.lemondeinformatique.fr/flux/applications-developpement.xml"
+    },
+    {
+      "name": "Le Monde Informatique — données et IA",
+      "url": "https://www.lemondeinformatique.fr/flux/donnees-ia.xml"
+    },
+    {
+      "name": "ActuIA — actualités de l’intelligence artificielle",
+      "url": "https://www.actuia.com/feed/"
+    },
+    {
+      "name": "Numerama — intelligence artificielle",
+      "url": "https://www.numerama.com/tech/intelligence-artificielle/feed/"
+    },
+    {
+      "name": "Next — actualités et enquêtes numériques",
+      "url": "https://next.ink/feed/"
+    },
+    {
+      "name": "OCTO Talks — développement et IA",
+      "url": "https://blog.octo.com/feed/"
+    },
+    {
+      "name": "Human Coders News — veille développement, FR et EN",
+      "url": "https://news.humancoders.com/items/feed.rss"
+    },
+    {
+      "name": "Vue.js — blog officiel, EN",
       "url": "https://blog.vuejs.org/feed.rss"
     },
     {
-      "name": "MDN Web Docs",
-      "url": "https://developer.mozilla.org/en-US/blog/rss.xml"
-    },
-    {
-      "name": "MDN Documentation",
-      "url": "https://developer.mozilla.org/en-US/docs/feeds/rss/all"
-    },
-    {
-      "name": "W3C Blog",
+      "name": "W3C — blog officiel, principalement EN",
       "url": "https://www.w3.org/blog/feed/"
     },
     {
-      "name": "WebAIM Accessibilité",
-      "url": "https://webaim.org/blog/feed/"
+      "name": "OpenAI — actualités officielles, EN",
+      "url": "https://openai.com/news/rss.xml"
     },
     {
-      "name": "A11Y Project",
-      "url": "https://www.a11yproject.com/feed.xml"
+      "name": "Google Actualités France — Accessibilité numérique et RGAA",
+      "url": "https://news.google.com/rss/search?q=(%22accessibilit%C3%A9%20num%C3%A9rique%22%20OR%20%22accessibilit%C3%A9%20web%22%20OR%20RGAA%20OR%20WCAG)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
     },
     {
-      "name": "Vite Blog",
-      "url": "https://vite.dev/blog/feed.xml"
+      "name": "Google Actualités France — Accessibilité numérique — DINUM et Access42",
+      "url": "https://news.google.com/rss/search?q=((site%3Anumerique.gouv.fr%20OR%20site%3Aaccess42.net)%20(accessibilit%C3%A9%20OR%20RGAA))%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
     },
     {
-      "name": "GitHub Blog",
-      "url": "https://github.blog/feed/"
+      "name": "Google Actualités France — Vue.js, Nuxt, Vuetify et Pinia",
+      "url": "https://news.google.com/rss/search?q=(%22Vue.js%22%20OR%20%22Vue%203%22%20OR%20Vuetify%20OR%20Nuxt%20OR%20Pinia)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
     },
     {
-      "name": "Google News Accessibilité",
-      "url": "https://news.google.com/rss/search?q=accessibilite+numerique"
+      "name": "Google Actualités France — TypeScript, JavaScript et Vite",
+      "url": "https://news.google.com/rss/search?q=(TypeScript%20OR%20JavaScript%20OR%20%22Vite.js%22)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
     },
     {
-      "name": "Google News Vue.js",
-      "url": "https://news.google.com/rss/search?q=Vue.js+JavaScript"
+      "name": "Google Actualités France — OpenAI et IA générative",
+      "url": "https://news.google.com/rss/search?q=(%22IA%20g%C3%A9n%C3%A9rative%22%20OR%20%22intelligence%20artificielle%20g%C3%A9n%C3%A9rative%22%20OR%20OpenAI%20OR%20ChatGPT)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
     },
     {
-      "name": "Google News Intelligence Artificielle",
-      "url": "https://news.google.com/rss/search?q=intelligence+artificielle"
+      "name": "Google Actualités France — Cybersécurité et ANSSI",
+      "url": "https://news.google.com/rss/search?q=(cybers%C3%A9curit%C3%A9%20OR%20ANSSI%20OR%20%22CERT-FR%22)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
     },
     {
-      "name": "Google News Cybersécurité",
-      "url": "https://news.google.com/rss/search?q=cybersecurite"
+      "name": "Google Actualités France — RGPD et données personnelles",
+      "url": "https://news.google.com/rss/search?q=(RGPD%20OR%20CNIL%20OR%20%22protection%20des%20donn%C3%A9es%20personnelles%22)%20when%3A30d&hl=fr&gl=FR&ceid=FR%3Afr"
     }
   ],
   "notifications": {
